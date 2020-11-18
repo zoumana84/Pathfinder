@@ -1,0 +1,24 @@
+We use Adjacency Matrix to store adjacency matrix of directional edge.
+The size of the matrix is VxV where V is the number of vertices in the 
+graph and the value of an entry Aij is either true or false depending 
+on whether there is an edge from vertex i to vertex j.
+
+we use DFS (Depth First Search) as path finding algorithm.
+DFS is a recursive algorithm for searching all the vertices
+of a graph or tree data structure.
+
+In algorithm we use two array
+1. visited 
+2. pathList
+
+visited store the visited vertex pathList store stack the path vertex
+
+When we visit some vertex we make that vertex visited and
+add to stack
+
+when we reach target vertex (nth), we return to the 
+previous vertex (n-1)the and search for other 
+adjacency vertex if no other adjacency vertex 
+of previous vertex then remove previous vertex 
+from visited and stack 
+and return to previous vertex (n-2)th
